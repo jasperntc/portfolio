@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "portfolio",
+  "compatibility_date": "2026-05-01",
+  // Assets only for now. v1.2 adds a Worker script for /api/contact.
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  },
+  "routes": [{ "pattern": "jasperntc.dev", "custom_domain": true }]
+}
