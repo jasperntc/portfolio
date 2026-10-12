@@ -7,6 +7,10 @@ export const sources = {
   linkedinHeadline: { label: "LinkedIn, headline", url: LINKEDIN },
   linkedinAbout: { label: "LinkedIn, About", url: LINKEDIN },
   linkedinWineKin: { label: "LinkedIn, Experience: Wine Kin", url: LINKEDIN },
+  linkedinAppbrewerie: {
+    label: "LinkedIn, Experience: Appbrewerie",
+    url: LINKEDIN,
+  },
   linkedinEcohealth: {
     label: "LinkedIn, Experience: Ecohealth Taiwan",
     url: LINKEDIN,

@@ -2,8 +2,6 @@ import { sources } from "./sources";
 import type { Experience } from "./types";
 
 // Newest first. Every number below traces to a source.
-// Wine Kin traffic (50%+ in 6 months), plugin savings (about USD 500 a month)
-// and Appbrewerie's site count (about 6) are left out until they're on LinkedIn.
 
 export const experience: Experience[] = [
   {
@@ -33,10 +31,10 @@ export const experience: Experience[] = [
     start: "2023-07",
     end: "2026-03",
     location: "Singapore, remote",
-    // Source: LinkedIn, Experience: Wine Kin, "Cloud Infrastructure & DevOps" bullet.
+    // Source: LinkedIn, Experience: Wine Kin, "SEO & Troubleshooting" bullet.
     standout: {
-      value: "24 months",
-      label: "with no unplanned downtime",
+      value: "50%+",
+      label: "organic traffic within 6 months",
       source: sources.linkedinWineKin,
     },
     bullets: [
@@ -48,11 +46,15 @@ export const experience: Experience[] = [
       {
         text: "Built a custom WordPress theme synced in real time with the Wine Hub inventory API.",
       },
+      // Source: LinkedIn, Experience: Wine Kin, "Custom API & Plugin Development" bullet.
       {
-        text: "Replaced paid premium plugins with an in-house plugin for API-driven product tables.",
+        text: "Replaced paid premium plugins with an in-house plugin for API-driven product tables, saving about USD 500 a month in licence fees.",
+        source: sources.linkedinWineKin,
       },
+      // Source: LinkedIn, Experience: Wine Kin, "SEO & Troubleshooting" bullet.
       {
-        text: "Grew organic traffic with semantic HTML and technical SEO.",
+        text: "Grew organic traffic by 50%+ within 6 months with semantic HTML, technical SEO and faster pages.",
+        source: sources.linkedinWineKin,
       },
     ],
     stack: ["WordPress", "PHP", "AWS", "MySQL"],
@@ -65,7 +67,11 @@ export const experience: Experience[] = [
     end: "2023-03",
     location: "Kota Kinabalu, remote",
     bullets: [
-      { text: "Set up and ran LEMP servers for client sites." },
+      // Source: LinkedIn, Experience: Appbrewerie, first bullet.
+      {
+        text: "Set up and ran LEMP servers hosting about 6 client sites.",
+        source: sources.linkedinAppbrewerie,
+      },
       { text: "Built booking, check-in and WooCommerce plugins for WordPress." },
       { text: "Helped build ReviewBah, a local business review app." },
       { text: "Built frontend pages with Vue.js, Tailwind CSS and Elementor." },
