@@ -25,6 +25,16 @@ pnpm-debug.log*
 .cache/
 .eslintcache
 *.tsbuildinfo
+coverage/
+
+# Next.js and Cloudflare
+next-env.d.ts
+.wrangler/
+.dev.vars*
+*.pem
+
+# Local Claude Code settings
+.claude/
 
 # Editors
 .vscode/*

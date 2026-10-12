@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #faf8f4;
+  --surface: #ffffff;
+  --fg: #1c1a17;
+  --muted: #5d5850;
+  --faint: #736d64;
+  --line: rgb(28 26 23 / 0.12);
+  /* Amber accent. Every text color here keeps 4.5:1 contrast on --bg and --surface. */
+  --accent: #b45309;
+  --accent-soft: rgb(217 119 6 / 0.12);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f0e0c;
+    --surface: #171512;
+    --fg: #ece8e1;
+    --muted: #aaa39a;
+    --faint: #8f887e;
+    --line: rgb(236 232 225 / 0.12);
+    --accent: #f5a524;
+    --accent-soft: rgb(245 165 36 / 0.14);
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-newsreader);
+}
+
+html {
+  color-scheme: light dark;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+::selection {
+  background: var(--accent-soft);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
