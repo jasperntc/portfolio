@@ -9,10 +9,12 @@ updates:
         dependency-type: development
     # Majors upgraded by hand: they must wait for Next's ESLint config
     # (typescript, eslint) or match the Node runtime (@types/node).
-    # Minor, patch and security updates still come through.
+    # Minor, patch and security updates still come through, except
+    # TypeScript minors: typescript-eslint supports only TypeScript < 6.1.
     ignore:
       - dependency-name: typescript
-        update-types: ["version-update:semver-major"]
+        update-types:
+          ["version-update:semver-major", "version-update:semver-minor"]
       - dependency-name: eslint
         update-types: ["version-update:semver-major"]
       - dependency-name: "@types/node"
