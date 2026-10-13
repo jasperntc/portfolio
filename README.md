@@ -24,7 +24,14 @@ npm run dev
 | `npm test` | Vitest, including the content checks |
 | `npm run build` | Static export to `out/` |
 | `npm run preview` | Build, then serve `out/` with Wrangler at http://localhost:8787 |
-| `npm run deploy` | Build, then deploy to Cloudflare |
+| `npm run deploy` | Build, then deploy to Cloudflare (CI does this on merge) |
+
+## Deploy
+
+Merging to `main` deploys automatically. The `deploy` job in `.github/workflows/check.yml` runs only after the `check` job passes (audit, lint, typecheck, tests, build), so a failing check blocks the deploy. It needs:
+
+- the repository secret `CLOUDFLARE_API_TOKEN`: a Cloudflare API token from the "Edit Cloudflare Workers" template, scoped to this account and the `jasperntc.dev` zone
+- the repository variable `CLOUDFLARE_ACCOUNT_ID`
 
 ## Content
 
