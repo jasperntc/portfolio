@@ -26,6 +26,19 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "claude-constellation",
+    title: "Claude Constellation",
+    status: "live",
+    summary: {
+      text: "My Claude Code history as a night sky you can fly through. Every star is a prompt I sent, the dust around it is the tool calls Claude made to answer it, and a timeline replays the sky in the order I worked. A TypeScript CLI reads the local transcripts and keeps only totals, never prompts or code.",
+    },
+    stack: ["TypeScript", "three.js", "WebGL", "Node.js"],
+    links: [
+      { label: "Live demo", href: "https://jasperntc.github.io/claude-constellation/" },
+      { label: "Repository", href: "https://github.com/jasperntc/claude-constellation" },
+    ],
+  },
+  {
     slug: "verde-resources",
     title: "Verde Resources",
     status: "live",
