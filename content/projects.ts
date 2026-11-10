@@ -39,6 +39,16 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "build-story",
+    title: "Build Story",
+    status: "live",
+    summary: {
+      text: "Turns an app's git history into a vertical video of it growing: it builds every merged pull request in a throwaway clone, screenshots each build on a phone-sized screen, and records a captioned video for Reels with Chrome alone. No ffmpeg and no runtime dependencies.",
+    },
+    stack: ["TypeScript", "Node.js", "Chrome DevTools Protocol"],
+    links: [{ label: "Repository", href: "https://github.com/jasperntc/build-story" }],
+  },
+  {
     slug: "verde-resources",
     title: "Verde Resources",
     status: "live",
